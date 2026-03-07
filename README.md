@@ -7,7 +7,7 @@ Tomo is a collection of animated desktop pet characters designed to be the visua
 > **Status:** This is **Phase 1** — the character animation system. Integration with the [OpenClaw](https://github.com/openclaw/openclaw) assistant runtime is coming next. Right now you get fully animated, interactive characters ready to be wired into the OpenClaw gateway.
 
 ![status](https://img.shields.io/badge/status-beta-orange)
-![characters](https://img.shields.io/badge/characters-5-blue)
+![characters](https://img.shields.io/badge/characters-4-blue)
 ![license](https://img.shields.io/badge/license-MIT-green)
 
 ---
@@ -21,7 +21,7 @@ Pick who you want living on your screen.
 | 🦞 | **Pinch** | A salmon-colored lobster with snipping claws and a teal belt. The original. Waddles when walking, waves claws when happy, floats Z's when sleeping. |
 | 🐕 | **Mochi** | A Shiba Inu with independently twitching ears, a wagging tail, and tongue-out grins. Droopy ears when worried, full-body tippy-taps when excited. |
 | 🤖 | **Unit-7** | A robot with LED eyes that shift color by mood — blue for calm, green for happy, red for angry, purple for proud. Pulsing power core and spark effects. |
-| 🐒 | **enzo** | A monkey with a curling prehensile tail, long clapping arms, and floating banana effects. Arms cross when mad, tail thumps when annoyed. |
+| 🐒 | **Enzo** | A monkey with a curling prehensile tail, long clapping arms, and floating banana effects. Arms cross when mad, tail thumps when annoyed. |
 
 Every character supports the full mood system: idle, happy, sleeping, curious, worried, walking, proud, spin, startle, and mad — plus idle micro-behaviors like blink, look around, stretch, wiggle, and yawn.
 
@@ -29,7 +29,7 @@ Want to build your own? See [Contributing a Character](#contributing-a-character
 
 ### Character Showcase
 
-| Pinch | Mochi | Unit-7 | enzo |
+| Pinch | Mochi | Unit-7 | Enzo |
 |:-----:|:-----:|:------:|:----:|
 | <img src="assets/characters/pinch.jpg" width="180"> | <img src="assets/characters/mochi.jpg" width="180"> | <img src="assets/characters/unit-7.jpg" width="180"> | <img src="assets/characters/enzo.jpg" width="180"> |
 | 🦞 Lobster | 🐕 Shiba Inu | 🤖 Robot | 🐒 Monkey |
@@ -47,7 +47,7 @@ SVG (named parts: body, arms, eyes, mouth, tail, effects)
       → @keyframes on individual body parts
 ```
 
-Characters are lightweight, scalable to any size, and trivial to customize. The entire system with all five characters and full animation is around 1200 lines.
+Characters are lightweight, scalable to any size, and trivial to customize. The entire system with all four characters and full animation is around 1200 lines.
 
 ---
 
@@ -104,24 +104,33 @@ On first launch, the onboarding wizard walks you through workspace selection, ga
 
 ---
 
-## Animations
+## Mood States
 
-Pinch the lobster (the original character) animations:
+Every character supports 10 moods and 5 idle behaviors. Here's how they look across the cast:
 
-| Idle | Happy | Sleep | Startle |
-|:----:|:-----:|:-----:|:-------:|
-| <img src="assets/animations/idle.svg" width="80"> | <img src="assets/animations/happy.svg" width="80"> | <img src="assets/animations/sleep.svg" width="80"> | <img src="assets/animations/startle.svg" width="80"> |
-| Breathing & blinking | Bouncing with joy | Zzz... | Surprised! |
+### Pinch
 
-| Doze | Side-Eye | Crossed | Huff |
-|:----:|:--------:|:-------:|:----:|
-| <img src="assets/animations/doze.svg" width="80"> | <img src="assets/animations/side-eye.svg" width="80"> | <img src="assets/animations/crossed.svg" width="80"> | <img src="assets/animations/huff.svg" width="80"> |
-| Getting sleepy... | Judging you | Arms crossed | Steaming mad |
+| Idle | Happy | Sleep | Startle | Walking | Mad |
+|:----:|:-----:|:-----:|:-------:|:-------:|:---:|
+| <img src="assets/moods/pinch-idle.jpg" width="100"> | <img src="assets/moods/pinch-happy.jpg" width="100"> | <img src="assets/moods/pinch-sleep.jpg" width="100"> | <img src="assets/moods/pinch-startle.jpg" width="100"> | <img src="assets/moods/pinch-walking.jpg" width="100"> | <img src="assets/moods/pinch-mad.jpg" width="100"> |
 
-| Proud | Peek | Spin | Walking |
-|:-----:|:----:|:----:|:-------:|
-| <img src="assets/animations/proud.svg" width="80"> | <img src="assets/animations/peek.svg" width="80"> | <img src="assets/animations/spin.svg" width="80"> | <img src="assets/animations/walking.svg" width="80"> |
-| Feeling accomplished | Curious peek | Celebratory spin | Scuttling around |
+### Mochi
+
+| Idle | Happy | Sleep | Startle | Walking | Mad |
+|:----:|:-----:|:-----:|:-------:|:-------:|:---:|
+| <img src="assets/moods/mochi-idle.jpg" width="100"> | <img src="assets/moods/mochi-happy.jpg" width="100"> | <img src="assets/moods/mochi-sleep.jpg" width="100"> | <img src="assets/moods/mochi-startle.jpg" width="100"> | <img src="assets/moods/mochi-walking.jpg" width="100"> | <img src="assets/moods/mochi-mad.jpg" width="100"> |
+
+### Unit-7
+
+| Idle | Happy | Sleep | Startle | Walking | Mad |
+|:----:|:-----:|:-----:|:-------:|:-------:|:---:|
+| <img src="assets/moods/unit-7-idle.jpg" width="100"> | <img src="assets/moods/unit-7-happy.jpg" width="100"> | <img src="assets/moods/unit-7-sleep.jpg" width="100"> | <img src="assets/moods/unit-7-startle.jpg" width="100"> | <img src="assets/moods/unit-7-walking.jpg" width="100"> | <img src="assets/moods/unit-7-mad.jpg" width="100"> |
+
+### Enzo
+
+| Idle | Happy | Sleep | Startle | Walking | Mad |
+|:----:|:-----:|:-----:|:-------:|:-------:|:---:|
+| <img src="assets/moods/enzo-idle.jpg" width="100"> | <img src="assets/moods/enzo-happy.jpg" width="100"> | <img src="assets/moods/enzo-sleep.jpg" width="100"> | <img src="assets/moods/enzo-startle.jpg" width="100"> | <img src="assets/moods/enzo-walking.jpg" width="100"> | <img src="assets/moods/enzo-mad.jpg" width="100"> |
 
 ---
 
@@ -160,7 +169,7 @@ tomo/
 
 ### Choosing a Character
 
-Currently the default character is Pinch the lobster. The new characters (Mochi, Unit-7, enzo) are built and ready — swap the SVG component in `Pet.tsx` to switch. Character selection UI is planned for the onboarding wizard.
+Currently the default character is Pinch the lobster. The new characters (Mochi, Unit-7, Enzo) are built and ready — swap the SVG component in `Pet.tsx` to switch. Character selection UI is planned for the onboarding wizard.
 
 ### Personality
 
