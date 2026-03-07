@@ -21,7 +21,7 @@ Pick who you want living on your screen.
 | 🦞 | **Pinch** | A salmon-colored lobster with snipping claws and a teal belt. The original. Waddles when walking, waves claws when happy, floats Z's when sleeping. |
 | 🐕 | **Mochi** | A Shiba Inu with independently twitching ears, a wagging tail, and tongue-out grins. Droopy ears when worried, full-body tippy-taps when excited. |
 | 🤖 | **Unit-7** | A robot with LED eyes that shift color by mood — blue for calm, green for happy, red for angry, purple for proud. Pulsing power core and spark effects. |
-| 🐒 | **Coco** | A monkey with a curling prehensile tail, long clapping arms, and floating banana effects. Arms cross when mad, tail thumps when annoyed. |
+| 🐒 | **enzo** | A monkey with a curling prehensile tail, long clapping arms, and floating banana effects. Arms cross when mad, tail thumps when annoyed. |
 
 Every character supports the full mood system: idle, happy, sleeping, curious, worried, walking, proud, spin, startle, and mad — plus idle micro-behaviors like blink, look around, stretch, wiggle, and yawn.
 
@@ -29,9 +29,9 @@ Want to build your own? See [Contributing a Character](#contributing-a-character
 
 ### Character Showcase
 
-| Pinch | Mochi | Unit-7 | Coco |
+| Pinch | Mochi | Unit-7 | enzo |
 |:-----:|:-----:|:------:|:----:|
-| <img src="assets/characters/pinch.jpg" width="180"> | <img src="assets/characters/mochi.jpg" width="180"> | <img src="assets/characters/unit-7.jpg" width="180"> | <img src="assets/characters/coco.jpg" width="180"> |
+| <img src="assets/characters/pinch.jpg" width="180"> | <img src="assets/characters/mochi.jpg" width="180"> | <img src="assets/characters/unit-7.jpg" width="180"> | <img src="assets/characters/enzo.jpg" width="180"> |
 | 🦞 Lobster | 🐕 Shiba Inu | 🤖 Robot | 🐒 Monkey |
 
 ---
@@ -150,7 +150,7 @@ tomo/
 │   │   └── SOUL.md
 │   ├── mochi/                   # Shiba Inu
 │   ├── unit-7/                  # Robot
-│   └── coco/                    # Monkey
+│   └── enzo/                    # Monkey
 └── package.json
 ```
 
@@ -160,7 +160,7 @@ tomo/
 
 ### Choosing a Character
 
-Currently the default character is Pinch the lobster. The new characters (Mochi, Unit-7, Coco) are built and ready — swap the SVG component in `Pet.tsx` to switch. Character selection UI is planned for the onboarding wizard.
+Currently the default character is Pinch the lobster. The new characters (Mochi, Unit-7, enzo) are built and ready — swap the SVG component in `Pet.tsx` to switch. Character selection UI is planned for the onboarding wizard.
 
 ### Personality
 
