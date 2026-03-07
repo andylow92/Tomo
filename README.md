@@ -27,6 +27,13 @@ Every character supports the full mood system: idle, happy, sleeping, curious, w
 
 Want to build your own? See [Contributing a Character](#contributing-a-character) below.
 
+### Character Showcase
+
+| Pinch | Mochi | Unit-7 | Coco |
+|:-----:|:-----:|:------:|:----:|
+| <img src="assets/characters/pinch.jpg" width="180"> | <img src="assets/characters/mochi.jpg" width="180"> | <img src="assets/characters/unit-7.jpg" width="180"> | <img src="assets/characters/coco.jpg" width="180"> |
+| 🦞 Lobster | 🐕 Shiba Inu | 🤖 Robot | 🐒 Monkey |
+
 ---
 
 ## How It Works
